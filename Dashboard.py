@@ -40,7 +40,5 @@ def custom_css():
 
 # Inject the custom CSS
 
-
-
 if __name__ == "__main__":
     run()
