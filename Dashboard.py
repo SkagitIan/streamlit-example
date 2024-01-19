@@ -14,10 +14,16 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 def run():
     st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
-    )
-
+        page_title="Appertivo",
+        page_icon="🧊",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        menu_items={
+            'Logout': 'https://www.appertivo.com/logout',
+            'Report a bug': "https://www.extremelycoolapp.com/bug",
+            'About': "# This is a header. This is an *extremely* cool app!"
+        }
+)
     st.write("# Welcome to Streamlit! 👋")
 
     st.sidebar.success("Select a demo above.")
