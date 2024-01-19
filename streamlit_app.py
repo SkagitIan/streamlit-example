@@ -12,7 +12,21 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
+def custom_css():
+    css = """
+    <style>
+    .sidebar .sidebar-content {
+        background-color: #9c77b9;
+    }
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+# Inject the custom CSS
+
+
 def run():
+    custom_css()
     st.set_page_config(
         page_title="Hello",
         page_icon="👋",
